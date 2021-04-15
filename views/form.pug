@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 New Message
+  form(action="/new" method="POST")
+    label(for="text") Message
+    input(name="messageText" id="text")
+    label(for="user") User
+    input(name="messageUser" id="user")
+    button Submit
+  a(href="/") back
